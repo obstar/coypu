@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coypu", "Coypu\Coypu.csproj", "{0495F7A7-A1A9-422C-BE9D-6D9F9BD4E97C}"
 EndProject
@@ -10,6 +10,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coypu.Tests", "Coypu.Tests\Coypu.Tests.csproj", "{3ACF8A72-2EAB-42E7-B60E-BB781D3B0DB2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coypu.Drivers.Tests", "Coypu.Drivers.Tests\Coypu.Drivers.Tests.csproj", "{310D5EB9-2B2A-406E-8B8E-FBC85D882F54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5CB9AF80-1809-4ABD-B17F-BD2B89F35678}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\History.md = ..\History.md
+		IMPORTANT.txt = IMPORTANT.txt
+		..\LICENSE.txt = ..\LICENSE.txt
+		NuGet.config = NuGet.config
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coypu.NUnit", "Coypu.NUnit\Coypu.NUnit.csproj", "{14FB5A97-D3A7-4759-BB6A-03CAFC9B8FAB}"
 EndProject

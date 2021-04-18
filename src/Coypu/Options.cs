@@ -26,10 +26,9 @@ namespace Coypu
 
         public override bool Equals(object obj)
         {
-            if (ReferenceEquals(null, obj)) return false;
-            if (ReferenceEquals(this, obj)) return true;
+            if (obj is null) return false;
+            return ReferenceEquals(this, obj) || Equals((Options) obj);
             //if (obj.GetType() != this.GetType()) return false;
-            return Equals((Options) obj);
         }
 
         /// <summary>
@@ -92,7 +91,7 @@ namespace Coypu
         /// <summary>
         /// Match exact visible text; Raises an error if more than one element match
         /// </summary>
-        public static Options SingleExact = Merge(Single, Substring);
+        public static Options SingleExact = Merge(Single, Exact);
 
         /// <summary>
         /// Match by substring in visible text; Raises an error if more than one element match

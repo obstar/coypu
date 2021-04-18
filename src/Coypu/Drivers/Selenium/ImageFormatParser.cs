@@ -11,6 +11,8 @@ namespace Coypu.Drivers.Selenium
             var extension = new FileInfo(fileName).Extension.ToLower()
                                                   .Replace("jpg", "jpeg");
 
+            extension = extension.Replace(".", "");
+
             ScreenshotImageFormat format;
             if (AreEqual(extension, ScreenshotImageFormat.Bmp))
                 format = ScreenshotImageFormat.Bmp;
@@ -18,12 +20,8 @@ namespace Coypu.Drivers.Selenium
                 format = ScreenshotImageFormat.Gif;
             else if (AreEqual(extension, ScreenshotImageFormat.Jpeg))
                 format = ScreenshotImageFormat.Jpeg;
-            else if (AreEqual(extension, ScreenshotImageFormat.Png))
-                format = ScreenshotImageFormat.Png;
-            else if (AreEqual(extension, ScreenshotImageFormat.Bmp))
-                format = ScreenshotImageFormat.Bmp;
             else
-                format = ScreenshotImageFormat.Jpeg;
+                format = ScreenshotImageFormat.Png;
 
             return format;
         }
